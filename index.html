@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ziggurat - Online Cuneiform Slate</title>
+		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		<script type="text/javascript" src="js/paper-full.min.js"></script>
+		<script type="text/javascript" src="js/cuneiform.js" canvas="myCanvas"></script>
+		<script type="text/javascript" src="js/actions.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2 nosidepadding">
+					<div class="menu-bar">
+						<div class="header rectangle">
+								<img src="images/logo_orange.png" class="logo">
+						</div>
+						<div class="separator"></div>
+						<div class="info">
+							<p class="centered important">Online cuneiform slate</p>
+						</div>
+						<div class="separator"></div>
+						<div class="menu-controls row nosidepadding">
+							<div class="button-container">
+								<div class="single-button" id="wedge-button">
+									<a href="#"><div class="button-content active">
+										<div class="hotkey">1</div>
+										<img src="images/icon-wedge.svg">
+										Add wedge
+									</div></a>
+								</div>
+								<div class="single-button" id="hook-button">
+									<a href="#"><div class="button-content">
+										<div class="hotkey">2</div>
+										<img src="images/icon-hook.svg">
+										Add hook
+									</div></a>
+								</div>
+							</div>
+							<div class="button-container">
+								<div class="single-button" id="rotate-button">
+									<a href="#"><div class="button-content">
+										<div class="hotkey">3</div>
+										<img src="images/icon-rotate.svg">
+										Rotate signs
+									</div></a>
+								</div>
+								<div class="single-button" id="translate-button">
+									<a href="#"><div class="button-content">
+										<div class="hotkey">4</div>
+										<img src="images/icon-move.svg">
+										Move signs
+									</div></a>
+								</div>
+							</div>
+							<div class="button-container">
+								<div class="single-button" id="angle-button">
+									<a href="#"><div class="button-content">
+										<div class="hotkey">SHIFT</div>
+										<img src="images/icon-angle.svg">
+										Snap angle
+									</div></a>
+								</div>
+								<div class="single-button" id="length-button">
+									<a href="#"><div class="button-content">
+										<div class="hotkey">CTRL</div>
+										<img src="images/icon-length.svg">
+										Snap length
+									</div></a>
+								</div>
+							</div>
+							<div class="button-container">
+								<div class="single-button" id="depth-button">
+									<a href="#"><div class="button-content active">
+										<div class="hotkey">q</div>
+										<img src="images/icon-depth.svg">
+										Toggle depth
+									</div></a>
+								</div>
+								<div class="single-button" id="clear-button">
+									<a href="#"><div class="button-content">
+										<div class="hotkey">x</div>
+										<img src="images/icon-clear.svg">
+										Clear
+									</div></a>
+								</div>
+							</div>
+						</div>
+						<div class="separator"></div>
+						<div class="desc">
+							<span class="emph" id="desc-header">Description<br></span> <span id="desc-content"></span>
+						</div>
+						<div class="footer">
+							Copyright &copy; 2016 Mark Sabini
+						</div>
+					</div>
+				</div>
+				<div class="col-md-10 nosidepadding">
+					<canvas id="myCanvas" resize></canvas>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
