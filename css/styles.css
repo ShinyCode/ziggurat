@@ -30,25 +30,69 @@ canvas[resize] {
     height: 100%;
 }
 
-.container-fluid {
+.app-container {
 	height: 100%;
 }
 
-.container-fluid > .row {
+.app-container > .row {
 	height: 100%;
 }
 
-.container-fluid > .row > .col-md-2 {
+.app-container > .row > div {
 	height: 100%;
 }
 
-.container-fluid > .row > .col-md-10 {
+.mobile-banner {
+	background-color: #222831;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	border-bottom: 2px solid #393e46;
+	display: none;
+	height: 50px;
+}
+
+.mobile-banner > img {
 	height: 100%;
+}
+
+.menu-bar-container {
+	background-color: #222831;
+	position: relative;
+	left: auto;
+}
+
+#tool-toggle {
+	position: absolute;
+	height: 0px;
+	width: 0px;
+	border-left: 0px solid transparent;
+  border-right: 64px solid transparent;
+  border-bottom: 64px solid #fd7014;
+	bottom: -64px;
+	right: -64px;
+	z-index: 9999;
+}
+
+#tool-toggle > img {
+	width: 32px;
+	position: absolute;
+	top: 27px;
+	left: 5px;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
 }
 
 .menu-bar {
 	background-color: #222831;
 	height: 100%;
+	width: 100%;
 }
 
 canvas {
@@ -224,4 +268,30 @@ canvas {
 	padding-right: 0px !important;
 	margin-left: 0px !important;
 	margin-right: 0px !important;
+}
+
+@media only screen and (max-width : 992px) {
+	.header {
+		display: none;
+	}
+
+	.header + .separator {
+		display: none;
+	}
+
+	.menu-bar-container {
+		position: absolute;
+		-webkit-transition: left 0.35s;
+		left: 0px;
+		transition: left 0.35s;
+		z-index: 9999;
+	}
+
+	#tool-toggle {
+		bottom: 0px;
+	}
+
+	.mobile-banner {
+		display: flex;
+	}
 }

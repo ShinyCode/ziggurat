@@ -10,12 +10,14 @@
 		<link href="css/styles.css" rel="stylesheet">
 		<script type="text/javascript" src="js/paper-full.min.js"></script>
 		<script type="text/javascript" src="js/cuneiform.js" canvas="myCanvas"></script>
-		<script type="text/javascript" src="js/actions.js"></script>
 	</head>
 	<body>
-		<div class="container-fluid">
+		<div class="mobile-banner">
+			<img src="images/logo_orange.png" class="logo">
+		</div>
+		<div class="container-fluid app-container">
 			<div class="row">
-				<div class="col-md-2 nosidepadding">
+				<div class="menu-bar-container col-xs-4 col-md-2 nosidepadding">
 					<div class="menu-bar">
 						<div class="header rectangle">
 								<img src="images/logo_orange.png" class="logo">
@@ -99,8 +101,11 @@
 							Copyright &copy; 2016 Mark Sabini
 						</div>
 					</div>
+					<a href="#"><div id="tool-toggle">
+						<img src="images/icon-pencil.svg">
+					</div></a>
 				</div>
-				<div class="col-md-10 nosidepadding">
+				<div class="canvas-container col-xs-8 col-md-10 nosidepadding">
 					<canvas id="myCanvas" resize></canvas>
 				</div>
 			</div>

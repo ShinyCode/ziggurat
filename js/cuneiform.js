@@ -120,6 +120,7 @@ translateTool.onMouseDrag = moveCuneiformSign
 window.onload = () => {
 	resetMessage()
 	setFontScale()
+	expandMenuBar()
 	const wedgeButton = document.getElementById('wedge-button')
 	const hookButton = document.getElementById('hook-button')
 	const rotateButton = document.getElementById('rotate-button')
@@ -128,6 +129,7 @@ window.onload = () => {
 	const lengthButton = document.getElementById('length-button')
 	const depthButton = document.getElementById('depth-button')
 	const clearButton = document.getElementById('clear-button')
+	const menuButton = document.getElementById('tool-toggle')
 	function setButtonActive(button, active) {
 		const buttonContent = button.querySelector('.button-content')
 		if(active) {
@@ -234,6 +236,15 @@ window.onload = () => {
 		})
 		clearButton.addEventListener('mouseleave', event => {
 			resetMessage()
+		})
+		menuButton.addEventListener('click', event => {
+			event.preventDefault()
+			if(!screenIsSmall()) return
+			if(menuBarIsOpen()) {
+				collapseMenuBar()
+			} else {
+				expandMenuBar()
+			}
 		})
 	}
 	bindActionListeners()
@@ -368,10 +379,38 @@ function setFontScale() {
 	body.style.fontSize = (scale * sourceWidth) + '%'
 }
 
+function screenIsSmall() {
+ 	return (document.documentElement.clientWidth < 992)
+}
+
+function collapseMenuBar() {
+	const menuBar = document.querySelector('.menu-bar')
+	const menuBarContainer = document.querySelector('.menu-bar-container')
+	menuBarContainer.style.left = -menuBar.offsetWidth + 'px'
+}
+
+function expandMenuBar() {
+	const menuBarContainer = document.querySelector('.menu-bar-container')
+	menuBarContainer.style.left = '0px'
+}
+
+function menuBarIsOpen() {
+	const menuBarContainer = document.querySelector('.menu-bar-container')
+	return (menuBarContainer.style.left === '0px')
+}
+
+function adjustMenuBar() {
+	if(screenIsSmall()) {
+		collapseMenuBar()
+	} else {
+		expandMenuBar()
+	}
+}
+
 window.onresize = function(event) {
 	const canvas = document.getElementById('myCanvas')
 	paper.view.viewSize.width = canvas.width
 	paper.view.viewSize.height = canvas.height
-	console.log(canvas.height)
 	setFontScale()
+	adjustMenuBar()
 }
