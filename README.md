@@ -1,4 +1,4 @@
-<p align="center"><img src="images/readme/logo_long.png" width="60%"/></p>
+<p align="center"><img src="images/readme/logo_long.png" width="100%"/></p>
 
 **ziggurat** is a web-based cuneiform slate with a modern, intuitive, and responsive interface. Fluidly and neatly inscribe cuneiform signs without the hassle of complex fonts or cumbersome paper-and-pencil. Intended to be simple to use, **ziggurat** makes writing cuneiform as easy as natively writing on clay - just click, drag, and repeat.
 
