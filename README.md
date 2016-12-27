@@ -4,8 +4,8 @@
 
 ## Table of Contents
 - [Usage](#id-usage)
-- [Gallery](#id-gallery)
 - [Phone & Tablet Usage](#id-mobile)
+- [Gallery](#id-gallery)
 - [Licenses & Dependencies](#id-licenses)
 
 ## <div id='id-usage'/>Usage
