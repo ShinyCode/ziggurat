@@ -1,4 +1,4 @@
-<p align="center"><img src="images/readme/logo.png" width="40%"/></p>
+<p align="center"><img src="images/readme/logo_long.png" width="60%"/></p>
 
 **ziggurat** is a web-based cuneiform slate with a modern, intuitive, and responsive interface. Fluidly and neatly inscribe cuneiform signs without the hassle of complex fonts or cumbersome paper-and-pencil. Intended to be simple to use, **ziggurat** makes writing cuneiform as easy as natively writing on clay - just click, drag, and repeat.
 
@@ -37,8 +37,11 @@
 
 ## <div id='id-mobile'/>Phone & Tablet Usage
 For users of devices with smaller screens, **ziggurat** will switch to a more compact layout to save space. In mobile mode, tap the menu button at the bottom left to expand and collapse the tool menu.
+<p align="center"><img src="images/readme/mobile-view.png" width="100%"/></p>
 
 ## <div id='id-gallery'/>Gallery
+Below is an assortment of signs written using **ziggurat**, accompanied by their corresponding values:
+<p align="center"><img src="images/readme/sign-mu-labeled.png" width="20%"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/readme/sign-bi-labeled.png" width="20%"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/readme/sign-la-labeled.png" width="20%"/></p>
 
 ## <div id='id-licenses'/>Licenses & Dependencies
  * **ziggurat** is licensed under the [MIT license](LICENSE).
