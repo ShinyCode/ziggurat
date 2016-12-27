@@ -4,10 +4,10 @@
 }
 
 html, body {
-    margin: 0;
-    overflow: hidden;
-    height: 100%;
-		font-size: 100%;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+	font-size: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,8 +26,8 @@ p.important {
 
 /* Scale canvas with resize attribute to full size */
 canvas[resize] {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .app-container {
